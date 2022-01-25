@@ -1,0 +1,11 @@
+int doUnion(int a[], int n, int b[], int m)  {
+        set<int> S;
+        
+        for(int i=0;i<n;i++){
+            S.insert(a[i]);
+        }
+        for(int j=0;j<m;j++){
+            S.insert(b[j]);
+        }
+        return S.size();
+    }
